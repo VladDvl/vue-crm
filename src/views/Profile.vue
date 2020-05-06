@@ -7,8 +7,8 @@
     <form class="form">
       <div class="input-field">
         <input
-            id="description"
-            type="text"
+          id="description"
+          type="text"
         >
         <label for="description">Имя</label>
         <span

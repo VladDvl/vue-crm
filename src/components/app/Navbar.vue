@@ -11,10 +11,10 @@
       <ul class="right hide-on-small-and-down">
         <li>
           <a
-              class="dropdown-trigger black-text"
-              href="#"
-              data-target="dropdown"
-              ref="dropdown"
+            class="dropdown-trigger black-text"
+            href="#"
+            data-target="dropdown"
+            ref="dropdown"
           >
             USER NAME
             <i class="material-icons right">arrow_drop_down</i>
@@ -41,30 +41,30 @@
 
 <script>
   export default {
-      data: () => ({
-          date: new Date(),
-          interval: null,
-          dropdown: null,
-      }),
-      methods: {
-        logout() {
-            console.log('Logout')
-            this.$router.push('/login?message=logout')
-        }
-      },
-      mounted() {
-          this.interval = setInterval(() => {
-              this.date = new Date()
-          }, 1000)
-          this.dropdown = M.Dropdown.init(this.$refs.dropdown, {
-              constrainWidth: false
-          })
-      },
-      beforeDestroy() {
-          clearInterval(this.interval)
-          if( this.dropdown && this.dropdown.destroy ) {
-              this.dropdown.destroy()
-          }
+    data: () => ({
+      date: new Date(),
+      interval: null,
+      dropdown: null,
+    }),
+    methods: {
+      logout() {
+        console.log('Logout')
+        this.$router.push('/login?message=logout')
       }
+    },
+    mounted() {
+      this.interval = setInterval(() => {
+        this.date = new Date()
+      }, 1000)
+      this.dropdown = M.Dropdown.init(this.$refs.dropdown, {
+        constrainWidth: false
+      })
+    },
+    beforeDestroy() {
+      clearInterval(this.interval)
+      if( this.dropdown && this.dropdown.destroy ) {
+        this.dropdown.destroy()
+      }
+    }
   }
 </script>

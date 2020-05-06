@@ -14,8 +14,8 @@
             <form>
               <div class="input-field">
                 <input
-                    id="name"
-                    type="text"
+                  id="name"
+                  type="text"
                 >
                 <label for="name">Название</label>
                 <span class="helper-text invalid">Введите название</span>
@@ -23,8 +23,8 @@
 
               <div class="input-field">
                 <input
-                    id="limit"
-                    type="number"
+                  id="limit"
+                  type="number"
                 >
                 <label for="limit">Лимит</label>
                 <span class="helper-text invalid">Минимальная величина</span>
@@ -59,8 +59,8 @@
 
               <div class="input-field">
                 <input
-                    id="limit"
-                    type="number"
+                  id="limit"
+                  type="number"
                 >
                 <label for="limit">Лимит</label>
                 <span class="helper-text invalid">LIMIT</span>
