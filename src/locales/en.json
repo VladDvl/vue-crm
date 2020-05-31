@@ -3,9 +3,12 @@
   "Message_EnterName": "Enter name",
   "Update": "Update",
   "Name": "Name",
+  "Detail_Title": "Detail-record",
   "Menu_Bill": "Bill",
   "Menu_History": "History",
   "Menu_Planning": "Planning",
   "Menu_NewRecord": "New record",
-  "Menu_Categories": "Categories"
+  "Menu_Categories": "Categories",
+  "Login": "Login",
+  "Register": "Register"
 }
